@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const week = ['mony', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
     const data = await fetch ('data.json');
     const days = await data.json();
-    const dayOfWeek = week[new Date().getDay()];  
+    const dayOfWeek = week[new Date().getDay()-1];  
     
 
     const items = document.querySelectorAll('.bar-chart-inner');
