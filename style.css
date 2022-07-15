@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body, html {
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+h2{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.4rem;
+    color:hsl(25, 47%, 15%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wrapper {
+    display:grid;
+    grid-template-rows: 1fr 2fr;    
+    justify-items: center;
+    height: 100vh;    
+    gap:15px
+    }
+
+.item-wrap-1 {
+    align-self: end;
+    display:grid;
+    grid-template-columns: 7fr 1fr;
+    align-items: center;
+    width: 25vw;
+    padding: 15px 25px;
+    background-color: hsl(10, 79%, 65%);
+    color:hsl(33, 100%, 98%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+
+.my-b{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.item-wrap-2 {
+    align-self: start;
+    width: 25vw;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+
+.wrap-roundF {    
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 2px solid hsl(33, 100%, 98%);
+    z-index: 1;
+}
+
+.wrap-roundB {
+    background-color: hsl(25, 47%, 15%);
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin-left:-20px;
+}
+
+.round-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    
+}
+
+.bar-chart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+
+.bar-chart-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.chart-hover{
+    margin: 10px 0;
+    padding: 7px 0;
+    text-align: center;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    font-weight: 700;
+    font-size: .6em;
+    border-radius: 5px; 
+    width: 100%;
+   
+}
+
+.bar-chart-inner{
+    height: var(--bar-height);
+    width: 70%;
+    background-color: var(--bar-back-color);
+    border-radius: 5px;
+    --bar-height:5%;
+}
+
+
+.bar-chart-inner:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.bar-chart p {
+    color: hsl(28, 10%, 53%);
+    font-size: .7rem;    
+    text-align: center;
+    grid-row-start: 3; 
+    grid-row-end: 4;     
+}
+
+/* .mon {
+    --bar-height: 27.45%;
+}
+
+.tue {
+    --bar-height: 49.91%;
+}
+
+div.wed {
+    --bar-height: 62.36%;
+    background-color: hsl(186, 34%, 60%);
+}
+
+.thu {
+    --bar-height: 41.07%;
+}
+
+.fri {
+    --bar-height: 33.39%;
+}
+
+.sat {
+    --bar-height: 53.28%;
+}
+
+.sun {
+    --bar-height: 35.48%;
+} */
+
+
+.bar-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px 0;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: hsl(28, 10%, 53%);
+    font-size: .8rem;
+    align-self: end;
+    justify-self: start;
+    padding: 0;
+    margin: 0;
+}
+
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color:hsl(25, 47%, 15%);
+    font-size: 1.7rem;
+    font-weight: 700;
+    justify-self: start;
+    padding: 0;
+    margin: 0;
+}
+
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color:hsl(25, 47%, 15%);
+    font-size: .9rem;
+    font-weight: 700;
+    align-self: end;
+    align-self: start;
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+}
+
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: hsl(28, 10%, 53%);
+    font-size: .8rem;
+    align-self: start;
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 1200px) {
+    .item-wrap-1, .item-wrap-2 {       
+        width: 40vw;
+        
+    }
+}
+
+@media (max-width: 960px) {
+    .item-wrap-1, .item-wrap-2 {       
+        width: 50vw;
+        padding: 10px 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .item-wrap-1, .item-wrap-2 {       
+        width: 60vw;
+        padding: 10px 20px; 
+    }
+}
+
+@media (max-width: 490px) {
+    .item-wrap-1, .item-wrap-2 {       
+        width: 80vw;
+        padding: 10px 20px; 
+    }
+}
